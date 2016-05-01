@@ -159,6 +159,10 @@ class App{
 	updateRadiusArmPoints(i);
 	updatePenPoint();
 	
+	if (showPoints){
+	    // if showing the points
+	    drawPenPoints();
+	}
 	if (showArms){
 	    // if showing arms, draw them
 	    drawRl();
@@ -169,10 +173,6 @@ class App{
 	if (showBaseLine){
 	    // if showing the baseline, draw it
 	    drawBaseLine();
-	}
-	if (showPoints){
-	    // if showing the points
-	    drawPenPoints();
 	}
 	// increment the step counter
 	i++;
