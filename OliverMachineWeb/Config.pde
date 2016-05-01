@@ -6,8 +6,8 @@ class Config {
     float RightRadius = 60;  // radius of left short arm in pixels
     
     // Radial Arm starting postion, in degrees, 0 degrees is due East, positive is counter clockwise
-    float InitRight = 90, // right arm init
-	InitLeft = -90;  // left arm init
+    float InitRight = 0, // right arm init
+	InitLeft = 180;  // left arm init
     
     // distance between the small disks (center to center) in pixels
     float SmallDiskDistance = 340;
@@ -21,8 +21,8 @@ class Config {
     float BigSpeed   = 1.3; // Wheel rotational speeds in Degrees per frame (frameRate is set elsewhere to get a nice result!)
     
     // pen holder arm lengths
-    float LeftArmlength = 270;  // length of arm in pixels
-    float RightArmlength = 295;  // length of arm in pixels
+    float LeftArmlength = 218;  // length of arm in pixels
+    float RightArmlength = 247;  // length of arm in pixels
     
     // pen color
     color PenColor = #F50C2F;  // RGB value of the pen color
