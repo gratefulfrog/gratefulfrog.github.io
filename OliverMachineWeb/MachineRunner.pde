@@ -19,8 +19,14 @@ void setup() {
   app =  new App(conf,mWidth,mHeight);
 }
 
-void draw() {
-    app.draw();
+void draw() {  
+    try {	
+	app.draw();
+    }
+    catch (Exception e) {
+	println("Arms were torn apart!");
+	exit();
+    }
 }
 
 void mouseClicked() {
