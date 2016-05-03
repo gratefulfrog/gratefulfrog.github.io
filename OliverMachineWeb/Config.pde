@@ -2,8 +2,8 @@ class Config {
     // All user config data goes here!
     
     // Small disk sizes
-    float LeftRadius = 60;  // radius of left short arm in pixels
-    float RightRadius = 60;  // radius of left short arm in pixels
+    float LeftRadius = 70;  // radius of left short arm in pixels
+    float RightRadius = 50;  // radius of left short arm in pixels
     
     // Radial Arm starting postion, in degrees, 0 degrees is due East, positive is counter clockwise
     float InitRight = 0, // right arm init
@@ -21,7 +21,7 @@ class Config {
     float BigSpeed   = 1.3; // Wheel rotational speeds in Degrees per frame (frameRate is set elsewhere to get a nice result!)
     
     // pen holder arm lengths
-    float LeftArmlength = 218;  // length of arm in pixels
+    float LeftArmlength = 270;  // length of arm in pixels
     float RightArmlength = 247;  // length of arm in pixels
     
     // pen color
@@ -31,8 +31,8 @@ class Config {
     float SimSpeed = 100;  // simulation speed in Frames Per Second, Note: the software will do its best to get that speed, but may fail!
     
     // image directory, where the saved images will go! Don't forget the slash at the end!
-    String imageDir = "/home/bob/MiscProjects/OliverMachine/Images/";
-    boolean saveImages = false; // false;  // set to true to durn on image saving
+    String imageDir = "/home/bob/MiscProjects/OliverMachine/MachineRunner/Images/";
+    boolean saveImages = false; // true;  // set to true to durn on image saving
     
 ////////////////////////////
 // end of User Config Data
