@@ -3,8 +3,8 @@
 Config conf = new Config();
 
 // window size
-int mWidth  = 1000; //round(conf.D + conf.Rl + conf.Rr + 2*conf.winSpace),
-mHeight = 600; //round(2*conf.winSpace + max(conf.Rl,conf.Rr) + 2*conf.Ra); 
+int mWidth  = 1000, //round(conf.D + conf.Rl + conf.Rr + 2*conf.winSpace),
+    mHeight = 600; //round(2*conf.winSpace + max(conf.Rl,conf.Rr) + 2*conf.Ra); 
 
 App app;
 
@@ -14,16 +14,6 @@ void setup() {
   background(conf.bg);
   stroke(255);  // black lines by default at first...
   app =  new App(conf,mWidth,mHeight);
-}
-
-void drawText(String t)   {
-    background(0);
-    // get the width for the text
-     float twidth = textWidth(t);
-     // place the text centered on the drawing area
-     //conf.D= float(t);
-     //app =  new App(conf,mWidth,mHeight);
-     text(String(t), (width - twidth)/2, height/2);
 }
 
 float gd(String s){
